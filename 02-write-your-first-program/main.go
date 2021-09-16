@@ -6,57 +6,54 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
-// package main is a special package
-// it allows Go to create an executable file
+// package main 是一个特殊的包
+// 它允许 Go 创建一个可执行文件
 package main
 
 /*
-This is a multi-line comment.
+这是一个多行注释。
 
-import keyword makes another package available
-  for this .go "file".
+import 关键字使另一个包可用于此 .go “文件”。
 
-import "fmt" lets you access fmt package's functionality
-  here in this file.
+import "fmt" 允许您在此文件中访问 fmt 包的功能。
 */
 import "fmt"
 
-// "func main" is special.
+// “func main” 是一个特殊的函数。
 //
-// Go has to know where to start
+// Go 必须知道从哪里开始执行
 //
-// func main creates a starting point for Go
+// func main 为 Go 创建一个起点
 //
-// After compiling the code,
-// Go runtime will first run this function
+// 编译代码后，Go 运行时会先运行这个函数
 func main() {
-	// after: import "fmt"
-	// Println function of "fmt" package becomes available
+	// import “fmt” 之后
+	// “fmt” 包的 Println 功能可用
 
-	// Look at what it looks like by typing in the console:
+	// 通过在控制台中键入下面命令来查看它的样子：
 	//   go doc -src fmt Println
 
-	// Println is just an exported function from
+	// Println 只是一个输出函数
 	//   "fmt" package
 
-	// Exported = First Letter is uppercase
+	// 输出 = 第一个字母是大写
 	fmt.Println("Hello Gopher!")
 
-	// Go cannot call Println function by itself.
-	// That's why you need to call it here.
-	// It only calls `func main` automatically.
+	// Go 不能自己调用​​ Println 函数.
+	// 这就是为什么你需要在这里调用它。
+	// 它只会自动调用 `func main`.
 
 	// -----
 
-	// Go supports Unicode characters in string literals
-	// And also in source-code: KÖSTEBEK!
+	// Go 支持字符串文字中的 Unicode 字符
+	// 而且在源代码中: KÖSTEBEK!
 	//
-	// Because: Literal ~= Source Code
+	// 因为: 字面 ~= 源代码
 
-	// EXERCISE: Remove the comments from below --> //
-	// fmt.Println("Merhaba Köstebek!")
+	// 练习: 删除下面的注释 --> //
+	fmt.Println("Merhaba Köstebek!")
 
-	// Unnecessary note:
-	// "Merhaba Köstebek" means "Hello Gopher"
-	// in Turkish language
+	// 不需要注释:
+	// "Merhaba Köstebek" 等同于 "Hello Gopher"
+	// 在土耳其语言中
 }
